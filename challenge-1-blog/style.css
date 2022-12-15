@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    /* colors */
+    --white: #ffffff;
+    --white-200: #f3f5f7;
+    --gray: #717171;
+    --gray-dark: #1a202c;
+    --primary-dark: #574ae8;
+    --primary-light: #3ea1db;
+
+    font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header,
+.page-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 80.8rem;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    align-self: center;
+}
+
+.page-header {
+    background: linear-gradient(
+        to top right,
+        var(--primary-dark),
+        var(--primary-light)
+    );
+    padding: 2.05rem 0;
+}
+
+.page-header .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-header .top .logo {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.page-header .search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.4rem;
+    margin-top: 3.65rem;
+}
+
+.search-bar img {
+    width: 2.2rem;
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-family: "Inter";
+    padding: 0.4rem 0.8rem;
+    outline: none;
+    width: 100%;
+}
+
+.search-bar input::placeholder {
+    color: var(--white);
+    font-family: "Inter";
+}
+
+.page-content {
+    background: var(--white-200);
+    height: auto;
+    flex: 1;
+    padding: 4rem 0;
+}
+
+.post {
+    background-color: var(--white);
+    padding: 2.4rem;
+    border-radius: 0.4rem;
+}
+
+.post .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post .top .date {
+    color: var(--gray);
+    font-size: 1.3rem;
+}
+
+.post .top img {
+    width: 2.2rem;
+}
+
+.post .title {
+    font-size: 1.8rem;
+    color: var(--gray-dark);
+    margin: 0.8rem 0;
+}
+
+.post .summary {
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+.post + .post {
+    margin-top: 3rem;
+}

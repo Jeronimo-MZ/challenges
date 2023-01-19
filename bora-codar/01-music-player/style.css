@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0f0d13;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas:
+        "player-1 player-2"
+        "player-1 player-3";
+    gap: 3.2rem;
+    padding: 1rem;
+}
+
+.player {
+    border: 1px solid black;
+    padding: 2.9rem;
+    background-color: #2a2141;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+}
+
+.music-title {
+    font-size: 2.4rem;
+    color: #e1e1e6;
+}
+
+.music-artist {
+    font-size: 1.9rem;
+    color: #e1e1e6;
+    opacity: 67%;
+}
+
+.player-1 {
+    grid-area: player-1;
+}
+
+.player-1 .music-cover {
+    width: 19rem;
+    height: 19rem;
+    border-radius: 0.6rem;
+}
+
+.player-1 .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: inherit;
+}
+
+.player-2 {
+    grid-area: player-2;
+}
+
+.player-2 .music-cover,
+.player-3 .music-cover {
+    width: 8.4rem;
+    height: 8.4rem;
+}
+
+.player-3 {
+    grid-area: player-3;
+}
+
+.player-2 .details,
+.player-3 .details {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3.2rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.controls > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.controls > button:focus {
+    outline: 2px groove black;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.96rem;
+}
+.progress .bar-container {
+    width: 100%;
+    height: 0.6rem;
+    background-color: rgba(217, 217, 217, 0.3);
+    border-radius: 0.96rem;
+    overflow: hidden;
+}
+
+.progress .bar-container .bar {
+    background-color: #d9d9d9;
+    width: 87%;
+    height: 100%;
+    border-radius: 0.96rem;
+}
+
+.progress .duration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #c4c4cc;
+    font-size: 1.4rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 710px) {
+    .players {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .player-1 {
+        max-width: 25rem;
+    }
+
+    :root {
+        font-size: 50%;
+    }
+}

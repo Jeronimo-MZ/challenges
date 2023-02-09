@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Jerónimo Matavel" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Boarding Pass - #boracodar</title>
+    </head>
+    <body>
+        <div class="content">
+            <header class="title">
+                <h1>Cartão de embarque</h1>
+            </header>
+            <main class="boarding-pass">
+                <div class="card-item flight-info">
+                    <div>
+                        <div class="flight-number">
+                            <span>Voo</span>
+                            <strong>RS995</strong>
+                        </div>
+                        <div class="flight-date">
+                            <span>Data</span>
+                            <strong>23/05/2023</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="departure">
+                            <div class="address">São Paulo, Brasil</div>
+                            <strong>GRU</strong>
+                            <time>17:00</time>
+                        </div>
+                        <img
+                            src="./assets/ion_airplane.svg"
+                            alt="ícone de avião"
+                        />
+                        <div class="arrival">
+                            <div class="address">São Francisco, EUA</div>
+                            <strong>SFO</strong>
+                            <time>04:48<sup>+1</sup></time>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item passenger-info">
+                    <div class="passenger-name">
+                        <p>Passageiro</p>
+                        <strong>Rodrigo Terron</strong>
+                    </div>
+                    <div class="seat">
+                        <p>Assento</p>
+                        <strong>28A</strong>
+                    </div>
+                </div>
+                <div class="card-item boarding-info">
+                    <div class="info">
+                        <div class="time">
+                            <p>Embarque</p>
+                            <time>16:15</time>
+                        </div>
+                        <div class="terminal">
+                            <p>Terminal</p>
+                            <strong>2</strong>
+                        </div>
+                        <div class="gate">
+                            <p>Portão</p>
+                            <strong>15</strong>
+                        </div>
+                    </div>
+                    <img
+                        class="qr-code"
+                        src="./assets/qr-code.svg"
+                        alt="QR code"
+                    />
+                    <p class="qr-label">Grupo de embarque: 3</p>
+                    <div class="message">
+                        <strong>Atenção:</strong
+                        ><span> o portão fecha 16:45</span>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                Qualquer problema procure o balcão de atendimento da sua
+                companhia aérea
+            </footer>
+        </div>
+    </body>
+</html>

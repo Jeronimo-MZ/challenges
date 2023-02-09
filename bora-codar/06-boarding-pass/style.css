@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Rubik", sans-serif;
+    --text-dark: #1f1f1f;
+    --text-light: #5c5c5c;
+}
+body {
+    background: linear-gradient(to right bottom, #8257e5, #271a45) no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    padding: 0.4rem;
+}
+
+.content {
+    max-width: 32.7rem;
+}
+
+.title h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.boarding-pass {
+    filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+}
+
+.card-item {
+    background-color: white;
+    /* border-radius: 24px; */
+    padding: 2.4rem 3.2rem;
+}
+/* ROUNDED_BORDERS_START */
+.card-item:nth-child(1) {
+    background: radial-gradient(circle 12px at top left, #fff, white) top left,
+        radial-gradient(circle 12px at top right, #fff, white) top right,
+        radial-gradient(circle 12px at bottom left, #0000 98%, white) bottom
+            left,
+        radial-gradient(circle 12px at bottom right, #0000 98%, white) bottom
+            right;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+    border-radius: 24px 24px 0 0;
+}
+
+.card-item:nth-child(2) {
+    background: radial-gradient(circle 12px at top left, #0000 98%, white) top
+            left,
+        radial-gradient(circle 12px at top right, #0000 98%, white) top right,
+        radial-gradient(circle 12px at bottom left, #0000 98%, white) bottom
+            left,
+        radial-gradient(circle 12px at bottom right, #0000 98%, white) bottom
+            right;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+}
+
+.card-item:nth-child(3) {
+    background: radial-gradient(circle 12px at top left, #0000 98%, white) top
+            left,
+        radial-gradient(circle 12px at top right, #0000 98%, white) top right,
+        radial-gradient(circle 12px at bottom left, #fff, white) bottom left,
+        radial-gradient(circle 12px at bottom right, #fff, white) bottom right;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+    border-radius: 0 0 24px 24px;
+}
+
+/* ROUNDED_BORDERS_END */
+
+/* DAHSED_BORDERS_START */
+.passenger-info::before,
+.passenger-info::after {
+    content: "";
+    border-top: 1px dashed #00000052;
+    position: absolute;
+    top: -1px;
+    width: calc(100% - 24px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.passenger-info::after {
+    top: initial;
+    bottom: 0px;
+}
+
+/* DAHSED_BORDERS_END */
+
+.flight-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.flight-info > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flight-number,
+.flight-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.flight-date {
+    align-items: flex-end;
+}
+
+.flight-date span,
+.flight-number span {
+    font-size: 1.4rem;
+    color: var(--text-light);
+}
+
+.flight-date strong,
+.flight-number strong {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.flight-info > div:last-child {
+    display: flex;
+    align-items: cener;
+    justify-content: space-between;
+}
+
+.flight-info > div:last-child > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.flight-info > div:last-child > div:last-child {
+    align-items: flex-end;
+}
+
+.flight-info .address {
+    font-size: 1.4rem;
+    color: var(--text-light);
+}
+
+.departure,
+.arrival {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.departure strong,
+.arrival strong {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.arrival time,
+.departure time {
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.passenger-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.passenger-info .seat {
+    text-align: end;
+}
+
+.passenger-info > div > p {
+    font-size: 1.4rem;
+    color: var(--text-light);
+}
+
+.passenger-info > div > strong {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.boarding-info {
+    display: grid;
+    grid-template-areas:
+        "info qr"
+        "empty qr-label"
+        "message message";
+    grid-template-columns: 1fr 2fr;
+}
+
+.boarding-info .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    grid-area: info;
+    padding-top: 1rem;
+}
+.boarding-info .info > div > p {
+    color: var(--text-light);
+}
+
+.boarding-info .info > div > strong {
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.boarding-info .time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
+.boarding-info .time time {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    color: white;
+    background-color: #633bbc;
+    border-radius: 8px;
+}
+
+.qr-code {
+    grid-area: qr;
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.qr-label {
+    grid-area: qr-label;
+    text-align: left;
+    color: var(--text-light);
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.message {
+    grid-area: message;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    opacity: 0.64;
+    text-align: center;
+    margin-top: 2rem;
+}

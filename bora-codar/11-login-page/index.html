@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Login | Vertigo</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="left">
+                <img src="assets/logo.svg" alt="" class="logo" />
+                <form class="login-form">
+                    <h2>Acesse a plataforma</h2>
+                    <p>
+                        Faça login ou registre-se para começar a construir seus
+                        projetos ainda hoje.
+                    </p>
+                    <div class="form-group">
+                        <label class="form-label" for="email">E-mail</label>
+                        <div class="form-control">
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Digite seu e-mail"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="label-with-link">
+                            <label class="form-label" for="password"
+                                >Senha</label
+                            >
+                            <a href="#">Esqueceu a senha</a>
+                        </div>
+                        <div class="form-control">
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Digite sua senha"
+                            />
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                title="mostrar senha"
+                            >
+                                <img src="assets/eye-off.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                    <button type="submit">Entrar</button>
+                    <p class="subscribe-message">
+                        Ainda não tem uma conta? <a href="#">Inscreva-se</a>
+                    </p>
+                </form>
+            </div>
+            <div class="right"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

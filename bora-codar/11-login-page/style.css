@@ -75,6 +75,7 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     max-width: 38.4rem;
+    min-width: 32rem;
 }
 
 .login-form > h2 {
@@ -192,4 +193,46 @@ a:hover {
     background-image: url("assets/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width: 720px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        flex: 1;
+        padding: 2rem;
+        justify-content: center;
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+        max-width: 38.4rem;
+        align-self: center;
+    }
+
+    .login-form {
+        min-width: initial;
+        align-self: center;
+        flex: initial;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    :root {
+        font-size: 56.25%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    :root {
+        font-size: 50%;
+    }
 }

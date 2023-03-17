@@ -1,6 +1,6 @@
 # Desafio 6 - Cartão de Embarque
 
-#boracodar um um cartão de embarque.
+#boracodar um cartão de embarque.
 
 ![Resultado final do desafio](../../.github/bora-codar/06-boarding-pass.png)
 

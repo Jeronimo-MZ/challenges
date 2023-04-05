@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script src="https://unpkg.com/imask"></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>Credit Card Form</title>
+    </head>
+    <body>
+        <form class="form">
+            <div class="credit-card">
+                <div class="front">
+                    <div class="content">
+                        <div class="icons">
+                            <img src="assets/visa-logo.svg" alt="VISA" />
+                            <i class="ph ph-contactless-payment"></i>
+                        </div>
+                        <span class="card-number"> **** **** **** **** </span>
+                        <div class="card-info">
+                            <p class="card-owner">Seu nome aqui</p>
+                            <p class="card-expiry-date">**/**</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back"></div>
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label for="card-number" class="form-label"
+                        >Número do cartão</label
+                    >
+                    <input
+                        type="text"
+                        id="card-number"
+                        class="form-control"
+                        placeholder="**** **** **** **** "
+                    />
+                </div>
+                <div class="input-group">
+                    <label for="card-owner" class="form-label"
+                        >Nome do titular</label
+                    >
+                    <input
+                        type="text"
+                        id="card-owner"
+                        class="form-control"
+                        placeholder="Nome como está no cartão"
+                    />
+                </div>
+                <div class="inputs-row">
+                    <div class="input-group">
+                        <label for="card-expiry-date" class="form-label"
+                            >Validade</label
+                        >
+                        <input
+                            type="text"
+                            id="card-expiry-date"
+                            class="form-control"
+                            placeholder="mm/aa"
+                        />
+                    </div>
+                    <div class="input-group">
+                        <label for="card-cvv" class="form-label">CVV</label>
+                        <input
+                            type="text"
+                            id="card-cvv"
+                            type="number"
+                            class="form-control"
+                            placeholder="***"
+                            minlength="3"
+                            maxlength="3"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <p class="safe-info">
+                <i class="ph-fill ph-shield-check"></i>
+                Seus dados estão seguros
+            </p>
+            <button class="submit-button">Adicionar cartão</button>
+        </form>
+    </body>
+</html>

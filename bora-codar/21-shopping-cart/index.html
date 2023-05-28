@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Carrinho de Compras</title>
+    </head>
+    <body>
+        <aside class="cart">
+            <header class="cart-header">
+                <p>Seu carrinho tem <strong>5 itens</strong></p>
+                <button class="close-button">
+                    <img src="assets/icons/Close.svg" alt="" />
+                </button>
+            </header>
+            <main class="cart-products">
+                <div class="product-card">
+                    <img
+                        src="assets/img/product-image-monitor.jpg"
+                        alt="Monitor Gamer Curvo 49 DQHD, 240Hz, 1ms, HDMI e DisplayPort, HDR 1000, FreeSync Premium, Ajuste de Altura - LC49G95TSSLXZD"
+                    />
+                    <div class="info">
+                        <p>
+                            Monitor Gamer Curvo 49 DQHD, 240Hz, 1ms, HDMI e
+                            DisplayPort, HDR 1000, FreeSync Premium, Ajuste de
+                            Altura - LC49G95TSSLXZD
+                        </p>
+                        <div class="bottom">
+                            <span>R$ 8.599,00</span>
+                            <div class="controls">
+                                <button>
+                                    <img src="assets/icons/Minus.svg" alt="" />
+                                </button>
+                                <span>1</span>
+                                <button>
+                                    <img src="assets/icons/Plus.svg" alt="" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="cart-footer">
+                <div class="price">
+                    <div class="total">
+                        <span>Total:</span>
+                        <strong>R$ 10.681,00</strong>
+                    </div>
+                    <button class="coupon">
+                        <img src="assets/icons/Tag.svg" />
+                        <span> Adicionar cupom </span>
+                    </button>
+                </div>
+                <button>Finalizar compra</button>
+            </footer>
+        </aside>
+    </body>
+    <script src="script.js"></script>
+</html>

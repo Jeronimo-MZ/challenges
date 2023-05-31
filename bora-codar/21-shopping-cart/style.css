@@ -202,6 +202,15 @@ button {
     font-size: 1.8rem;
 }
 
+.cart-footer > button:hover {
+    background-color: var(--color-brand-light);
+}
+
+.cart-footer > button:focus {
+    outline: 2px solid var(--color-text-primary);
+    outline-offset: 2px;
+}
+
 @media (max-width: 720px) {
     :root {
         font-size: 56.25%;

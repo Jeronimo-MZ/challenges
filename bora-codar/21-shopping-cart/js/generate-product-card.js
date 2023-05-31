@@ -12,14 +12,14 @@ function generateProductCard(cartItem) {
             <div class="bottom">
                 <span>${formatMoney(cartItem.price * cartItem.quantity)}</span>
                 <div class="controls">
-                    <button>
-                        <img src="assets/icons/Minus.svg" alt="" onclick="decreaseQuantity(${
+                    <button title="decrease quantity" class="btn-decrease">
+                        <img src="assets/icons/Minus.svg"  alt="" onclick="decreaseQuantity(${
                             cartItem.id
                         })" />
                     </button>
                     <span>${cartItem.quantity}</span>
-                    <button>
-                        <img src="assets/icons/Plus.svg" alt="" onclick="increaseQuantity(${
+                    <button title="increase quantity" class="btn-increase">
+                        <img src="assets/icons/Plus.svg"  alt="" onclick="increaseQuantity(${
                             cartItem.id
                         })" />
                     </button>

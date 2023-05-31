@@ -188,3 +188,17 @@ button {
     font-weight: 500;
     font-size: 1.8rem;
 }
+
+@media (max-width: 720px) {
+    :root {
+        font-size: 56.25%;
+    }
+
+    .product-card .info .bottom .controls button {
+        padding: 0.6rem;
+    }
+
+    .product-card .info .bottom .controls span {
+        padding: 0 0.6rem;
+    }
+}

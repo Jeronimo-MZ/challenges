@@ -183,7 +183,7 @@ button {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    color: var(--color-brand-light);
+    color: var(--color-text-secondary);
     font-size: 1.6rem;
     font-weight: 500;
     margin-left: auto;
@@ -192,6 +192,24 @@ button {
 .cart-footer .price .coupon img {
     width: 2.025rem;
     height: 2.025rem;
+}
+
+.cart-footer .price .coupon input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.cart-footer .price .coupon input:hover::placeholder {
+    color: var(--color-brand-lighter);
+}
+.cart-footer .price .coupon input::placeholder {
+    color: var(--color-brand-light);
+}
+.cart-footer .price .coupon input:focus,
+.cart-footer .price .coupon input:valid {
+    border-bottom: 1px solid var(--color-brand-light);
 }
 
 .cart-footer > button {
